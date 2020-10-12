@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.addEventListener("message", function (event) {
+            //event.data is message that's been sent from EM window.
+            console.log(event.data);
+            console.log('3---------');
+        });
+        message = {
+            name: "messageName",
+            sender: "game",
+            data: "any data object"
+        }
+
+        console.log('1---------');
+        window.parent.postMessage(message, "*");
+
+        console.log('2---------');
+
+    </script>
+</head>
+
+<body>
+    <div src="listener.html">x </div>
+    iframe
+</body>
+
+</html>

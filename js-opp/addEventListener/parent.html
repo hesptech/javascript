@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        /* function showAndroidToast(toast) {
+            Android.showToast(toast);
+        } */
+
+        window.addEventListener("message", function (event) {
+            //event.data is message that's been sent from EM window.
+            console.log(event.data);
+        });
+        //window.parent.postMessage(message, "*");
+
+
+        /* // app Vplay
+        this.mobilePrint(response);
+
+        mobilePrint(response: StagedCouponPrintData): StagedCouponPrintData {
+        console.log(response);
+        return response;
+        }
+        //-- */
+
+        message = {
+            name: "---x----------",
+            sender: "game",
+            data: "any data object"
+        }
+
+        window.parent.postMessage(message, "*");
+    </script>
+</head>
+
+<body style="height: 600; width: 350;">
+    <iframe src="http://localhost:4200" width="350" height="600"></iframe>
+    <!-- <iframe src="http://localhost:4200/virtual" width="350" height="600"></iframe> -->
+    <!-- <iframe src="https://qacom-vplaydemovg.ody-services.net/virtual" width="350" height="600"></iframe> -->
+</body>
+
+</html>
