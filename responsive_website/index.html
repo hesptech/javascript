@@ -4,6 +4,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page Title</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+<script>
+    console.log('eeee');
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "nav-ul-hamburger") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav-ul-hamburger";
+        }
+    }
+</script>
+
 </head>
 <body>
 
@@ -27,6 +41,14 @@
                 <li><a href="#"><i class="m-2 fas fa-shopping-cart"></i></i></a></li>
             </ul>
         </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="m-2 fas fa-bars"></i></a>
+        <ul id="myTopnav" class="nav-ul-hamburger">
+            <li><a href="">demo</a></li>
+            <li><a href="">shop</a></li>
+            <li><a href="">product</a></li>
+            <li><a href="">lookbook</a></li>
+            <li><a href="">blog</a></li>
+        </ul>
     </header>
 
     
@@ -160,36 +182,38 @@
 
     <!-- Portafolio-3 (3) -->
     <section class="portfolio-3">
-        <h1 class="">latest blog posts</h1>
-        <hr class="portfolio-divider-1">
-        <h4 class="portfolio-subtitle-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit!</h4>
+        <div class="portfolio-3-container">
+            <h1 class="">latest blog posts</h1>
+            <hr class="portfolio-divider-1">
+            <h4 class="portfolio-subtitle-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit!</h4>
 
-        <figure class="port-item-1">
-            <img src="img/img_gallery_3.png" alt="gallery item" class="">
-            <figcaption class="port_desc-3">
-                <p class="port-item-date">By admin on Febrary 21, 2020</p>
-                <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
-                <div class="port-item-paragraph">consectetur adipiscing elit</div>
-            </figcaption>
-        </figure>
+            <figure class="port-item-1">
+                <img src="img/img_gallery_3.png" alt="gallery item" class="">
+                <figcaption class="port_desc-3">
+                    <p class="port-item-date">By admin on Febrary 21, 2020</p>
+                    <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
+                    <div class="port-item-paragraph">consectetur adipiscing elit</div>
+                </figcaption>
+            </figure>
 
-        <figure class="port-item-1">
-            <img src="img/img_gallery_3.png" alt="gallery item" class="">
-            <figcaption class="port_desc-3">
-                <p class="port-item-date">By admin on Febrary 21, 2020</p>
-                <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
-                <div class="port-item-paragraph">consectetur adipiscing elit</div>
-            </figcaption>
-        </figure>
+            <figure class="port-item-1">
+                <img src="img/img_gallery_3.png" alt="gallery item" class="">
+                <figcaption class="port_desc-3">
+                    <p class="port-item-date">By admin on Febrary 21, 2020</p>
+                    <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
+                    <div class="port-item-paragraph">consectetur adipiscing elit</div>
+                </figcaption>
+            </figure>
 
-        <figure class="port-item-1">
-            <img src="img/img_gallery_3.png" alt="gallery item" class="">
-            <figcaption class="port_desc-3">
-                <p class="port-item-date">By admin on Febrary 21, 2020</p>
-                <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
-                <div class="port-item-paragraph">consectetur adipiscing elit</div>
-            </figcaption>
-        </figure>
+            <figure class="port-item-1">
+                <img src="img/img_gallery_3.png" alt="gallery item" class="">
+                <figcaption class="port_desc-3">
+                    <p class="port-item-date">By admin on Febrary 21, 2020</p>
+                    <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
+                    <div class="port-item-paragraph">consectetur adipiscing elit</div>
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
 
@@ -210,10 +234,10 @@
 
 
     <footer class="">
-        <div class="container">
+        <div class="footer-container">
             <div class="col-2">
                 <ul class="unstyled-list">
-                    <li>My test Template</li>
+                    <li class="footer-titles">My test Template</li>
                     <li>Returns and Exchanges</li>
                     <li>text</li>
                     <li>text</li>
@@ -225,7 +249,7 @@
 
             <div class="col-1">
                 <ul class="unstyled-list">
-                    <li>Categories</li>
+                    <li class="footer-titles">Categories</li>
                     <li>Returns and Exchanges</li>
                     <li>text</li>
                     <li>text</li>
@@ -237,7 +261,7 @@
 
             <div class="col-1">
                 <ul class="unstyled-list">
-                    <li>Categories</li>
+                    <li class="footer-titles">Categories</li>
                     <li>Returns and Exchanges</li>
                     <li>text</li>
                     <li>text</li>
@@ -249,7 +273,7 @@
 
             <div class="col-1">
                 <ul class="unstyled-list">
-                    <li>Categories</li>
+                    <li class="footer-titles">Categories</li>
                     <li>Returns and Exchanges</li>
                     <li>text</li>
                     <li>text</li>
@@ -261,14 +285,9 @@
 
             <div class="col-2">
                 <ul class="unstyled-list">
-                    <li>20text</li>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
+                    <li class="footer-titles">Instagram</li>
                 </ul>
+                <img src="img/footer_instagram.png" alt="gallery item" class="">
             </div>
         </div>
     </footer>
