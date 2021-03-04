@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page Title</title>
+<title>Page Title</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -21,11 +21,10 @@
                 <li><a class="nav-ul-center" href="">My test Template</a></li>
             </ul>
             <ul  class="nav-ul-right">
-                <li><a href="">menu 1</a></li>
-                <li><a href="">menu 2</a></li>
-                <li><a href="">menu 3</a></li>
-                <li><a href="">menu 4</a></li>
-                <li><a href="">menu 5</a></li>
+                <li><a href="#"><i class="m-2 fa fa-fw fa-search"></i></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="m-2 fa fa-fw fa-user"></i></a></li>
+                <li><a href="#"><i class="m-2 fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="m-2 fas fa-shopping-cart"></i></i></a></li>
             </ul>
         </nav>
     </header>
@@ -33,71 +32,166 @@
     
     <section class="home">
         <div class="container">
-            <h1 class="title">interior decorations
-                <span class="">looking for furniture in your living</span>
-            </h1>
+            <h1 class="title">interior decorations</h1>
+            <hr class="title-divider-1">
+            <h2 class="subtitle">looking for furniture in your living</h2>
             <a href="" class="button button-accent">button &rarr;</a>
         </div>
     </section>
 
-
-    <section class="gallery_1">
-
-    </section>
-
-    <section class="gallery_2">
-        <h1 class="">gallery 2</h1>
-        <span class="">paragraph</span>
-        <a href="" class="">button &darr;</a>
-
-        <figure class="gallery_item">
-            <img src="img/img_gallery_2.png" alt="gallery item" class="">
-            <figcaption class="gallery_item_desc">
-                <div class="">name</div>
-                <div class="">price</div>
-            </figcaption>
+    <!-- Portafolio-1 (3) -->
+    <section class="portfolio-1">
+        <figure class="port-item-1">
+            <img src="img/img_gallery_1.png" alt="gallery item" class="">
         </figure>
 
-        <figure class="gallery_item">
-            <img src="img/img_gallery_2.png" alt="gallery item" class="">
-            <figcaption class="gallery_item_desc">
-                <div class="">name</div>
-                <div class="">price</div>
-            </figcaption>
+        <figure class="port-item-1">
+            <img src="img/img_gallery_1.png" alt="gallery item" class="">
         </figure>
 
-        <figure class="gallery_item">
-            <img src="img/img_gallery_2.png" alt="gallery item" class="">
-            <figcaption class="gallery_item_desc">
-                <div class="">name</div>
-                <div class="">price</div>
-            </figcaption>
-        </figure>
-
-        <figure class="gallery_item">
-            <img src="img/img_gallery_2.png" alt="gallery item" class="">
-            <figcaption class="gallery_item_desc">
-                <div class="">name</div>
-                <div class="">price</div>
-            </figcaption>
-        </figure>
-
-        <figure class="gallery_item">
-            <img src="img/img_gallery_2.png" alt="gallery item" class="">
-            <figcaption class="gallery_item_desc">
-                <div class="">name</div>
-                <div class="">price</div>
-            </figcaption>
-        </figure>
-
-        <figure class="gallery_item">
-            <img src="img/img_gallery_2.png" alt="gallery item" class="">
-            <figcaption class="gallery_item_desc">
-                <div class="">name</div>
-                <div class="">price</div>
-            </figcaption>
+        <figure class="port-item-1">
+            <img src="img/img_gallery_1.png" alt="gallery item" class="">
         </figure>
     </section>
+
+    <!-- Portafolio (6) -->
+    <section class="portfolio">
+        <h1 class="">best selling products</h1>
+        <hr class="portfolio-divider-1">
+        <h4 class="portfolio-subtitle-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit!</h4>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item">
+            <img src="img/img_gallery_2.png" alt="gallery item" class="">
+            <figcaption class="port_desc">
+                <p class="port-item-title">product title</p>
+                <div class="port-item-price">&#36; 0.00</div>
+            </figcaption>
+        </figure>
+    </section>
+
+
+    <!-- Portafolio-3 (3) -->
+    <section class="portfolio-3">
+        <h1 class="">latest blog posts</h1>
+        <hr class="portfolio-divider-1">
+        <h4 class="portfolio-subtitle-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit!</h4>
+
+        <figure class="port-item-1">
+            <img src="img/img_gallery_3.png" alt="gallery item" class="">
+            <figcaption class="port_desc-3">
+                <p class="port-item-date">By admin on Febrary 21, 2020</p>
+                <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
+                <div class="port-item-paragraph">consectetur adipiscing elit</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item-1">
+            <img src="img/img_gallery_3.png" alt="gallery item" class="">
+            <figcaption class="port_desc-3">
+                <p class="port-item-date">By admin on Febrary 21, 2020</p>
+                <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
+                <div class="port-item-paragraph">consectetur adipiscing elit</div>
+            </figcaption>
+        </figure>
+
+        <figure class="port-item-1">
+            <img src="img/img_gallery_3.png" alt="gallery item" class="">
+            <figcaption class="port_desc-3">
+                <p class="port-item-date">By admin on Febrary 21, 2020</p>
+                <div class="port-item-title-3">Lorem ipsum dolor sit amet</div>
+                <div class="port-item-paragraph">consectetur adipiscing elit</div>
+            </figcaption>
+        </figure>
+    </section>
+
 
     <section class="blogs">
 
@@ -111,77 +205,71 @@
 
     </section>
 
+
+
+
+
     <footer class="">
-        <div class="col-1">
-            <ul class="style-list-1">
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-            </ul>
-        </div>
+        <div class="container">
+            <div class="col-2">
+                <ul class="unstyled-list">
+                    <li>My test Template</li>
+                    <li>Returns and Exchanges</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
 
-        <div class="col-1">
-            <ul class="style-list-1">
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-            </ul>
-        </div>
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <li>Categories</li>
+                    <li>Returns and Exchanges</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
 
-        <div class="col-1">
-            <ul class="style-list-1">
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-            </ul>
-        </div>
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <li>Categories</li>
+                    <li>Returns and Exchanges</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
 
-        <div class="col-1">
-            <ul class="style-list-1">
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-            </ul>
-        </div>
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <li>Categories</li>
+                    <li>Returns and Exchanges</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
 
-        <div class="col-1">
-            <ul class="style-list-1">
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-            </ul>
-        </div>
-
-        <div class="col-1">
-            <ul class="style-list-1">
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
-            </ul>
+            <div class="col-2">
+                <ul class="unstyled-list">
+                    <li>20text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
