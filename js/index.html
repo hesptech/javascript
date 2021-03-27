@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="pure_function.js"></script> -->
+
+</head>
+
+<body>
+xxx
+</body>
+<script>
+        
+    function age(p) {
+        let result;
+        if (p.age == null) return
+        if (p.age >= 21) return 'drink';
+        if (p.age < 18) return 'not drink';
+        if (p.age < 21) return 'not drink in usa'
+    }
+
+    const p = {
+        age: 16,
+    }
+
+    function verify(p) {
+        return console.log(age(p));
+    };
+
+    verify(p);
+
+    console.log('yyy');
+    </script>
+</html>
