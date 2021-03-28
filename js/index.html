@@ -6,33 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <script src="pure_function.js"></script> -->
+    <!-- <script src="no_elses.js"></script> -->
 
 </head>
 
 <body>
-xxx
+    <h1 class=""><label for="fname">drinking age:</label></h1>
+    <input type="number" id="age" name="age" ><br>
+    <p>
+        <button type="button" onclick="verifyClick(document.getElementById('age').value)">
+        can I drink alcohol?
+        </button>
+    </p>
+    <p id="demo"></p>
 </body>
+
 <script>
-        
-    function age(p) {
-        let result;
-        if (p.age == null) return
-        if (p.age >= 21) return 'drink';
-        if (p.age < 18) return 'not drink';
-        if (p.age < 21) return 'not drink in usa'
-    }
-
+    // 1.ini object + answer
     const p = {
-        age: 16,
+        age: document.getElementById('age').value,
+    }
+    let answer;
+
+
+    // 2. onClick function
+    function verifyClick(age) {
+        p.age = age;
+        launchVerifyAge(p);
     }
 
-    function verify(p) {
-        return console.log(age(p));
+
+    // 3. call funtion, gets answer, ini dom answer
+    function launchVerifyAge(p) {
+        answer = verifyAge(p);
+        if (p.age !== '') document.getElementById('demo').innerHTML = answer;
     };
 
-    verify(p);
 
-    console.log('yyy');
+    // 4. main funtion
+    function verifyAge(p) {
+        let result;
+        if (p.age == null) return;
+        if (p.age >= 21) return 'can drink';
+        if (p.age < 18) return 'can not drink';
+        if (p.age < 21) return 'can not drink in usa';
+        
+    }
+
+    console.log(p.age, 'sss');
     </script>
 </html>
