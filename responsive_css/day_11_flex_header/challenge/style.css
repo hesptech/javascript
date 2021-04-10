@@ -74,15 +74,18 @@ header {
 }
 
 .nav__list {
+    display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0.5em 0;
     list-style: none;
 }
 
 .nav__link {
+    padding: 0.25em 1em 0.25em 0;;
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;;
+    text-transform: uppercase;
+    display: inline-block;
 }
 
 .nav__link--button {
