@@ -1,0 +1,117 @@
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-column-text {
+    text-align: center;
+}
+
+/* nav */
+.sec-nav {
+    background-color: #136C72;
+}
+
+.logo {
+    width: 50px;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-items {
+    align-items: center;
+}
+
+.nav-item {
+    padding-right: 0.5em;
+}
+
+.nav-item-menu {
+    display: flex;
+    justify-self: flex-start;
+    width: 100%;
+
+}
+
+.nav-item-btn {
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.sec-nav__btn {
+    background-color: #ffffff;
+    border-radius: 100px;
+    color: #136C72;
+    padding: 0.5em 1em;
+}
+
+/* head */
+.sec-head {
+    background-color: #23424A;
+    color: #ffffff;
+    padding: 3em 0;
+}
+
+.sec-head p {
+    margin-bottom: 3em;
+}
+
+.sec-head__btn {
+    background-color: #38CFD9;
+    border-radius: 100px;
+    color: black;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+/* sec-main */
+.sec-main-aside {
+    padding: 3em 0;
+}
+
+.sec-main {
+    width: 60%;
+}
+
+.sec-main h2 {
+    color: #136C72;    
+}
+
+/* main aside */
+.sec-aside {
+    background-color: #136C72;
+    color: #ffffff;
+    width: 30%;
+}
