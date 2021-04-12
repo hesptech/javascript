@@ -31,10 +31,6 @@ img {
     justify-content: space-between;
 }
 
-.sec-column-text {
-    text-align: center;
-}
-
 /* nav */
 .sec-nav {
     background-color: #136C72;
@@ -114,4 +110,6 @@ ul {
     background-color: #136C72;
     color: #ffffff;
     width: 30%;
+    text-align: center;
+    padding: 0 1.5em;
 }
