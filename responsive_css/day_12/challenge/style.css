@@ -29,9 +29,17 @@ img {
     font-family: 'Roboto', sans-serif;
 }
 
+h4 span {
+    padding: 0 0.5em;
+}
+
 .sec-head__title {
     color: #824936;
     font-size: 3rem;
+}
+
+h1.sec-head__title {
+    margin: 0;
 }
 
 /* sec-main */
