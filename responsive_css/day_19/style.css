@@ -214,10 +214,16 @@ ul a:link.nav__link--button{
         height: auto;
     }
 
+    .nav__list {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+
+    }
+
     .row {
         display: flex;
         justify-content: space-between;
-        /* y */
     }
 
     .hero__text {
@@ -239,6 +245,7 @@ ul a:link.nav__link--button{
     }
     
     .nav__item {
+        margin: 0;
         padding-left: 1em;
     }
 }
