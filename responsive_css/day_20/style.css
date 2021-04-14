@@ -47,6 +47,65 @@ img {
 }
 
 
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    /* padding: 0em; */
+    border-radius: 50%;
+    background: #6F737F;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* menu hidden/visible */
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+
 /* sec-header */
 .sec-header {
     background-color: #3B4050;
@@ -155,12 +214,33 @@ img {
 
 
 @media (min-width: 700px) {
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        /* display: flex; */
+        height: auto;
+        position: unset;
+    }
+
     .container {
         width: 80%;
         max-width: 1100px;
         margin: 0 auto;
     }
+
+
+    /* sec-nav */
+    .sec-nav__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     
+    /* sec-header */
     .row {
         display: flex;
         justify-content: space-between;
