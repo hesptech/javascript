@@ -3,6 +3,32 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
 */
 
+
+:root {
+  --ff: 'Fira Sans', sans-serif;
+  
+  --fw-n: 300;
+  --fw-m: 600;
+  --fw-b: 800;
+  
+  --fs-2: 5rem;
+  --fs-p: 1rem;
+  
+  --primary-clr: #225560;
+  --secondary-clr: #36213E;
+  --secondary-clr-light: #554971;
+  --accent-clr: #EF6461;
+
+  --spacer: 1rem;
+  --spacer-md: calc(var(--spacer) * 2);
+  --spacer-lg: calc(var(--spacer) * 3);
+  
+  --shadow: 0 0 1em rgba(0,0,0, .25);
+  --br: 5px;
+  
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -108,7 +134,8 @@ img {
 
 /* sec-header */
 .sec-header {
-    background-color: #3B4050;
+    /* background-color: #3B4050; */
+    background-color: var(--primary-clr);
     padding: 1em 1em 2em 1em;
     /* text-align: center; */
     color: #ffffff;
