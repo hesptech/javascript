@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr; */
+            /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-columns: repeat(auto-fit, 22.5rem);
+            justify-content: center;
+
+        }
+
+        .card {
+            border-radius: 1em;
+            padding: 1em;
+            margin: 15px;
+            box-shadow: 0 10px 30px -10px black;
+        }
+
+        .card--dark {
+            background-color: gray;
+        }
+
+        .card__image {
+
+        }
+
+        .card__title {
+
+        }
+
+        .card__body {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="card card--light">
+            <img src="https://unsplash.it/300" alt="" class="card__image">
+            <h2 class="card__title">I am a light card</h2>
+            <p class="card__body">And here we are....</p>
+        </div>
+
+        <div class="card card--dark">
+            <img src="https://unsplash.it/300" alt="" class="card__image">
+            <h2 class="card__title">I am a dark card</h2>
+            <p class="card__body">And here we are....</p>
+        </div>
+
+        <div class="card card--light">
+            <img src="https://unsplash.it/300" alt="" class="card__image">
+            <h2 class="card__title">I am a light card</h2>
+            <p class="card__body">And here we are....</p>
+        </div>
+
+        <div class="card card--dark">
+            <img src="https://unsplash.it/300" alt="" class="card__image">
+            <h2 class="card__title">I am a dark card</h2>
+            <p class="card__body">And here we are....</p>
+        </div>
+
+        <div class="card card--light">
+            <img src="https://unsplash.it/300" alt="" class="card__image">
+            <h2 class="card__title">I am a light card</h2>
+            <p class="card__body">And here we are....</p>
+        </div>
+
+        <div class="card card--dark">
+            <img src="https://unsplash.it/300" alt="" class="card__image">
+            <h2 class="card__title">I am a dark card</h2>
+            <p class="card__body">And here we are....</p>
+        </div>
+    </div>
+
+</body>
+</html>
